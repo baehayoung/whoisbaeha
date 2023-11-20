@@ -1,0 +1,54 @@
+.columnFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowFlex {
+    display: flex;
+}
+
+.highlight {
+    box-shadow: inset 0 -10px 0 #b2e1fc; 
+}
+
+.projectItem {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid gray;
+
+    .summaryArea {
+        flex: 1;
+        margin-right: 5px;
+    }
+
+    .descriptionArea {
+        flex: 2;
+
+        li {
+            margin-left: 20px;
+        }
+    }
+
+    .detailArea {
+        margin-bottom: 20px;
+    }
+
+    .skillItem {
+        width: fit-content;
+        margin-right: 5px;
+    }
+
+    .linkArea {
+        color: gray;
+        margin-top: 10px;
+
+        a {
+            color: gray;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+
+}

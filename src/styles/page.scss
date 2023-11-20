@@ -1,0 +1,101 @@
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+    height: 100%;
+
+    .firstPparagraph {
+        height: auto;
+    }
+}
+
+.refContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    table {
+        margin: auto;
+        tbody {
+            td {
+                padding-top: 15px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    text-underline-position : under;
+                }
+            }
+        }
+
+        td {
+            padding: 0 50px;
+        }
+    }
+}
+
+.resumePageContainer {
+    width: 80%;
+    margin: auto;
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .resumeContainer {
+        width: 100%;
+        text-align: left;
+        white-space: pre-wrap;
+        font-family: 'GmarketSansMedium';
+        border-bottom: 1px solid;
+        margin-bottom: 30px;
+
+        display: flex;
+
+        .leftArea {
+            flex-grow: 1;
+        }
+
+        .rightArea { 
+            flex-grow: 1;
+            margin: 10px;
+            padding: 30px;
+            border-radius: 5px;
+            border: 1px solid #424141;
+        }
+
+        .resumeItem {
+            margin: 15px 0;
+
+            .selectedItem {
+                width: fit-content;
+                color: white;
+                background-color: #424141bb; 
+            }
+        }
+
+        .skillContainer {
+            flex-grow: 1;
+            margin: 10px;
+
+            .skillBox {
+                margin: 15px 0;
+                border: 3px solid black;
+    
+                .skillItem {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+    .flexColumnContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
