@@ -1,2 +1,3 @@
 # whoisbaeha
-This is a code of BAEHA's portfolio.
+This is a BAEHA's portfolio.
+- https://baehayoung.github.io/whoisbaeha/
