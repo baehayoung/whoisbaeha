@@ -1,5 +1,5 @@
 1:HL["/whoisbaeha/_next/static/css/e79bf399f437af19.css","style",{"crossOrigin":""}]
-0:["lD15J0cCbS1Ks7d3GJ2Ur",[[["",{"children":["(page)",{"children":["resume",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/whoisbaeha/_next/static/css/e79bf399f437af19.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["VnXWyF7LKFw05EC0SJ_b0",[[["",{"children":["(page)",{"children":["resume",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/whoisbaeha/_next/static/css/e79bf399f437af19.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/whoisbaeha/_next/static/css/b4154880396b53d8.css","style",{"crossOrigin":""}]
 5:I[8326,["326","static/chunks/326-0893d1ed5604f141.js","185","static/chunks/app/layout-f45944f27fce3582.js"],""]
 6:I[6954,[],""]
