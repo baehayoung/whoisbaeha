@@ -11,29 +11,33 @@
 }
 
 .refContainer {
+    height: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: center;
 
-    table {
-        margin: auto;
-        tbody {
-            td {
-                padding-top: 15px;
+    .contentsContainer {
+        height: auto;
+        width: 100%;
+        max-width: 1100px;
 
-                a {
-                    color: black;
-                    text-decoration: none;
-                }
-                a:hover {
-                    text-decoration: underline;
-                    text-underline-position : under;
-                }
+        display: flex;
+        justify-content: space-around;
+
+        .refItem {
+            display: flex;
+            flex-direction: column;
+    
+            a {
+                color: black;
+                margin: 10px 3px;
+                text-decoration: none;
             }
-        }
-
-        td {
-            padding: 0 50px;
+    
+            a:hover {
+                text-decoration: underline;
+                text-underline-position: under;
+            }
         }
     }
 }
@@ -97,5 +101,49 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+    
+        .firstPparagraph {
+            padding: 5px 15px;
+        }
+    }
+
+    .refContainer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .contentsContainer {
+            display: flex;
+            flex-direction: column;
+    
+            .refItem {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 26px;
+                padding-bottom: 30px;
+                width: 234px;
+                border-bottom: 1px solid black;
+        
+                a {
+                    color: black;
+                    margin: 10px 3px;
+                    text-decoration: none;
+                }
+        
+                a:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                }
+            }
+        }
     }
 }
