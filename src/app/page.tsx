@@ -6,7 +6,9 @@ import '../styles/page.scss';
 export default function Home() {
   return (
     <div className="homeContainer">
-      <Image src={profileImgFirst} alt="profileImg" height={500} />
+      <div className="imgContainer">
+        <Image src={profileImgFirst} alt="profileImg" fill objectFit="contain" />
+      </div>
       <div className="firstPparagraph">
         <h2>안녕하세요.</h2>
         <h1>프론트엔드 개발자 배하입니다.</h1>
