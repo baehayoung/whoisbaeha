@@ -1,15 +1,15 @@
 .homeContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 300px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .imgContainer {
         position: relative;
         height: 500px;
         width: 100%;
         max-width: 400px;
+        z-index: -10;
     }
 
     .firstPparagraph {
@@ -51,21 +51,16 @@
 
 .resumePageContainer {
     width: 80%;
+    height: 100%;
     margin: auto;
 
-    .title {
-        margin-bottom: 20px;
-    }
-
     .resumeContainer {
-        width: 100%;
+        display: flex;
         text-align: left;
         white-space: pre-wrap;
         font-family: 'GmarketSansMedium';
         border-bottom: 1px solid;
         margin-bottom: 30px;
-
-        display: flex;
 
         .leftArea {
             flex-grow: 1;
@@ -88,7 +83,6 @@
                 background-color: #424141bb; 
             }
         }
-
         .skillContainer {
             flex-grow: 1;
             margin: 10px;
@@ -113,11 +107,9 @@
 
 @media screen and (max-width: 767px) {
     .homeContainer {
-        display: flex;
         flex-direction: column;
 
         .imgContainer {
-            position: relative;
             height: 200px;
             width: 250px;
         }
@@ -128,35 +120,39 @@
     }
 
     .refContainer {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
         .contentsContainer {
             display: flex;
             flex-direction: column;
     
             .refItem {
                 margin: auto;
-                display: flex;
-                flex-direction: column;
                 margin-bottom: 26px;
                 padding-bottom: 30px;
                 width: 234px;
                 border-bottom: 1px solid black;
-        
-                a {
-                    color: black;
-                    margin: 10px 3px;
-                    text-decoration: none;
-                }
-        
-                a:hover {
-                    text-decoration: underline;
-                    text-underline-position: under;
-                }
             }
         }
     }
+
+    .resumePageContainer {
+
+        .experiences {
+            display: flex;
+            flex-direction: column;
+            
+            .rightArea { 
+                margin: 10px 0;
+                padding: 15px;
+                border-radius: 5px;
+                border: 1px solid #424141;
+            }
+        }
+
+        .flexColumnContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
 }
