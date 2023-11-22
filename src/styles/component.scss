@@ -52,3 +52,48 @@
     }
 
 }
+
+@media screen and (max-width: 767px) {
+    .projectItem {
+        border-top: 1px dashed gray;
+        flex-direction: column;
+    
+        .summaryArea {
+            text-align: center;
+            margin-bottom: 10px;
+            
+            span {
+                margin-top: 5px;
+            }
+        }
+    
+        .descriptionArea {
+            flex: 2;
+    
+            li {
+                margin-left: 20px;
+            }
+        }
+    
+        .detailArea {
+            margin-bottom: 20px;
+        }
+    
+        .skillItem {
+            width: fit-content;
+            margin-right: 5px;
+        }
+    
+        .linkArea {
+            color: gray;
+            margin-top: 10px;
+    
+            a {
+                color: gray;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    
+    }
+}

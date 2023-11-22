@@ -11,13 +11,11 @@ const ResumePage = () => {
 
     return (
         <div className="resumePageContainer">
-            <h1 className="title">BAE HAYEONG</h1>
-            <br/>
             <div className="resumeContainer flexColumnContainer">
                 <h2>About Me</h2>
                 <div className="resumeItem">{introString}</div>
             </div>
-            <div className="resumeContainer">
+            <div className="resumeContainer experiences">
                 <div className="flexColumnContainer leftArea">
                     <h2>Experiences</h2>
                     <span style={{color: 'gray'}}>*마우스를 올리면 내용을 확인할 수 있습니다.</span>
