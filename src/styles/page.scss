@@ -83,17 +83,24 @@
                 background-color: #424141bb; 
             }
         }
+        
         .skillContainer {
-            flex-grow: 1;
-            margin: 10px;
+            margin: 10px 0;
+            flex-direction: column;
+
+            .categoryBox {
+                margin-bottom: 30px;
+            }
 
             .skillBox {
+                width: 100%;
+                display: flex;
                 margin: 15px 0;
-                border: 3px solid black;
-    
-                .skillItem {
-                    width: fit-content;
-                }
+                padding: 10px 0;
+                border-radius: 8px;
+                overflow-x: auto;
+                border: 2px solid black;
+                justify-content: space-around;
             }
         }
     }
@@ -145,6 +152,20 @@
                 padding: 15px;
                 border-radius: 5px;
                 border: 1px solid #424141;
+            }
+        }
+
+        .skillContainer {
+            flex-direction: column;
+
+            .skillBox {
+                margin: 15px 0;
+                border: 3px solid black;
+    
+                .skillItem {
+                    margin: auto;
+                    width: fit-content;
+                }
             }
         }
 

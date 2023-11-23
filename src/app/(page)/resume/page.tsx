@@ -5,6 +5,8 @@ import {backSkillList, experiencesList, frontSkillList, introString, manageSkill
 import ProjectItem from '@/components/projectItem';
 
 import '@/styles/page.scss';
+import { Github, cpp, Confluence, CSS, Git, Gitlab, HTML, JS, Jira, NodeJS, Python, React, Redux } from '../../../../public/svgs';
+import Image from 'next/image';
 
 const ResumePage = () => {
     const {experienceIdxObj, projectIdxObj, handleMouseOver} = useResume();
@@ -90,28 +92,28 @@ const ResumePage = () => {
             <div className="resumeContainer">
                 <div className="flexColumnContainer leftArea">
                     <h2>Skills</h2>
-                    <div className="resumeContainer">
-                        <div className="skillContainer">
+                    <div className="skillContainer">
+                        <div className="categoryBox">
                             <h3>Frontend</h3>
                             <div className="skillBox">
                                 {frontSkillList.map((item, idx) => (
-                                    <div key={idx} className="skillItem">{item}</div>
+                                    <div key={idx} className="skillItem"><Image src={item} alt="frontSkill" width={50}/></div>
                                 ))}
                             </div>
                         </div>
-                        <div className="skillContainer">
+                        <div className="categoryBox">
                             <h3>Others</h3>
                             <div className="skillBox">
                                 {backSkillList.map((item, idx) => (
-                                    <div key={idx} className="skillItem">{item}</div>
+                                    <div key={idx} className="skillItem"><Image src={item} alt="otherSkill" width={50}/></div>
                                 ))}
                             </div>
                         </div>
-                        <div className="skillContainer">
+                        <div className="categoryBox">
                             <h3>Project Manage</h3>
                             <div className="skillBox">
                                 {manageSkillList.map((item, idx) => (
-                                    <div key={idx} className="skillItem">{item}</div>
+                                    <div key={idx} className="skillItem"><Image src={item} alt="pmSkill" width={50}/></div>
                                 ))}
                             </div>
                         </div>
