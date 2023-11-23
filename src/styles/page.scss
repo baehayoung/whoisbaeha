@@ -14,6 +14,7 @@
 
     .firstPparagraph {
         height: auto;
+        font-family: 'GmarketSansMedium';
     }
 }
 
@@ -152,20 +153,6 @@
                 padding: 15px;
                 border-radius: 5px;
                 border: 1px solid #424141;
-            }
-        }
-
-        .skillContainer {
-            flex-direction: column;
-
-            .skillBox {
-                margin: 15px 0;
-                border: 3px solid black;
-    
-                .skillItem {
-                    margin: auto;
-                    width: fit-content;
-                }
             }
         }
 
