@@ -1,4 +1,5 @@
 import { experienceProps, projectProps, skillProps } from '@/types/resumeType';
+import { Github, cpp, Confluence, CSS, Git, Gitlab, HTML, JS, Jira, NodeJS, Python, React, Redux } from '../../public/svgs';
 
 export const introString = `3년차 웹 프론트엔드 개발자 배하영입니다.
 - 저는 이해하고 움직이는 것을 좋아합니다. 프론트엔드 개발자가 되기 전 보안 공부를 하는 과정에서 생긴 습관으로, 구현한 코드와 전달받은 코드들을 이해하고 개발하려 노력합니다.
@@ -122,6 +123,6 @@ const otherProjList:Array<projectProps> = [
 ];
 export const projectList = [frontEndProjList, otherProjList];
 
-export const frontSkillList:Array<string> = ['Javascript', 'React', 'HTML & CSS', 'css', 'Redux'];
-export const backSkillList:Array<string> = [ 'Nodejs', 'Python', 'C & C++'];
-export const manageSkillList:Array<string> = ['git', 'GitHub', 'Gitlab', 'wall', 'Jira', 'Confluence'];
+export const frontSkillList = [JS, React, HTML, CSS, Redux];
+export const backSkillList = [ NodeJS, Python, cpp];
+export const manageSkillList = [Git, Github, Gitlab, Jira, Confluence];
