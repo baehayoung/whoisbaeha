@@ -8,7 +8,13 @@
 }
 
 .highlight {
+    width: fit-content;
+    margin-right: 5px;
     box-shadow: inset 0 -10px 0 #b2e1fc; 
+}
+
+.leftArea {
+    flex: 1;
 }
 
 .projectItem {
@@ -51,6 +57,36 @@
         }
     }
 
+}
+
+.workItem {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 7px 0;
+
+
+    .title {
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .jobs {
+        color: rgb(85, 85, 85)
+    }
+
+    .contents {
+        flex: 2;
+        margin: 5px 0 10px 0;
+
+        li {
+            margin-left: 20px;
+        }
+
+        .skills {
+            display: flex;
+            margin-top: 5px;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {

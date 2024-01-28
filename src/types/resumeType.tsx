@@ -1,7 +1,11 @@
 export interface experienceProps {
     title: string;
+    job?: string;
     duration: string;
     description?: string;
+    works? :Array<string>;
+    skills? :Array<string>;
+    note? :string;
 }
 
 export interface projectProps {

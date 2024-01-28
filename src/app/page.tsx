@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import profileImgFirst from '../../public/images/profileImg1.jpg';
+
 import '../styles/page.scss';
 
 export default function Home() {

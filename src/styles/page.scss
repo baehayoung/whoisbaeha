@@ -50,66 +50,63 @@
     }
 }
 
+.normalHeight {
+    line-height: normal;     
+}
+
+.middleLine {
+    width: 80%;
+    margin: auto;
+}
+
 .resumePageContainer {
     width: 80%;
     height: 100%;
     margin: auto;
 
+    .flexOne {
+        flex: 1
+    }
+
     .resumeContainer {
+        width: 100%;
         display: flex;
         text-align: left;
         white-space: pre-wrap;
+        flex-direction: column;
         font-family: 'GmarketSansMedium';
         border-bottom: 1px solid;
         margin-bottom: 30px;
 
-        .leftArea {
-            flex-grow: 1;
-        }
-
-        .rightArea { 
-            flex-grow: 1;
-            margin: 10px;
-            padding: 30px;
-            border-radius: 5px;
-            border: 1px solid #424141;
-        }
-
         .resumeItem {
             margin: 15px 0;
-
-            .selectedItem {
-                width: fit-content;
-                color: white;
-                background-color: #424141bb; 
-            }
         }
+
+        .rowItem {
+            display: flex;
+            flex-direction: row;
+        }
+
         
-        .skillContainer {
-            margin: 10px 0;
-            flex-direction: column;
+        // .skillContainer {
+        //     margin: 10px 0;
+        //     flex-direction: column;
 
-            .categoryBox {
-                margin-bottom: 30px;
-            }
+        //     .categoryBox {
+        //         margin-bottom: 30px;
+        //     }
 
-            .skillBox {
-                width: 100%;
-                display: flex;
-                margin: 15px 0;
-                padding: 10px 0;
-                border-radius: 8px;
-                overflow-x: auto;
-                border: 2px solid black;
-                justify-content: space-around;
-            }
-        }
-    }
-
-    .flexColumnContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        //     .skillBox {
+        //         width: 100%;
+        //         display: flex;
+        //         margin: 15px 0;
+        //         padding: 10px 0;
+        //         border-radius: 8px;
+        //         overflow-x: auto;
+        //         border: 2px solid black;
+        //         justify-content: space-around;
+        //     }
+        // }
     }
 }
 
