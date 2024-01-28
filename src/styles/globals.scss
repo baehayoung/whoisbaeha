@@ -14,10 +14,11 @@
     font-style: normal;
 }
 
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -27,8 +28,10 @@ html {
     font-family: 'TmonMonsori', 'GmarketSansMedium';
     display: flex;
     flex-direction: column;
+    line-height: 1.8;
 
-    body, main {
+    body,
+    main {
         height: 100%;
         overflow: auto;
         flex: 1;
@@ -41,39 +44,54 @@ html {
 header {
     font-size: 30px;
     width: 100%;
-    display: flex;
     margin: auto;
-    align-items: center;
-    justify-content: space-between;
+    max-width: 1200px;
 
     position: sticky;
     top: 0;
     padding: 30px 30px;
     backdrop-filter: brightness(1.1) blur(20px);
-        
-    li {
-        list-style: none;
-        float: left;
-        height: 100%;
+
+    .contents {
+        width: 83%;
+        margin: auto;
         display: flex;
         align-items: center;
-        font-size: 20px;
-        padding: 8px 12px;
+        justify-content: space-between;
 
-        a {
-            color: black;
-            cursor: pointer;
-            text-decoration: none;
-        }
+        li {
+            list-style: none;
+            float: left;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            padding: 8px 12px;
 
-        a:hover {
-            text-decoration: underline;
+            a {
+                color: black;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
         }
     }
+
+
 }
 
-@media screen and (max-width: 767px) {
-    header {
+.contents {
+    margin: auto;
+    max-width: 1200px;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .contents {
+        width: 100%;
         flex-direction: column;
     }
 }

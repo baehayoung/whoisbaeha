@@ -1,17 +1,12 @@
-export interface experienceProps {
+export interface itemProps {
     title: string;
-    duration: string;
-    description?: string;
-}
-
-export interface projectProps {
-    title: string;
-    role: string;
+    role?: string;
     link?: string;
     duration: string;
-    details: Array<string>;
     description?: string;
-    skills: Array<string>;
+    details?: Array<string>;
+    skills?: Array<string>;
+    note?: string;
 }
 
 export interface skillProps {

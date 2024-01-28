@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
-import css from '../styles/globals.scss';
+import '../styles/globals.scss';
 
 export const metadata: Metadata = {
   title: 'WhoisBaeha',
@@ -18,8 +19,11 @@ export default function RootLayout({
       <body>
         <Header />
         <main>
-          {children}
+          <div className="contents">
+            {children}
+          </div>
         </main>
+        <Footer />
       </body>
     </html>
   )

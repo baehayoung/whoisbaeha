@@ -8,92 +8,102 @@
 }
 
 .highlight {
-    box-shadow: inset 0 -10px 0 #b2e1fc; 
+    width: fit-content;
+    margin-right: 5px;
+    box-shadow: inset 0 -10px 0 #b2e1fc;
 }
 
-.projectItem {
-    width: 100%;
-    display: flex;
-    margin-top: 10px;
-    padding-top: 5px;
-    border-top: 1px solid gray;
+.leftArea {
+    flex: 1;
+}
 
-    .summaryArea {
-        flex: 1;
-        margin-right: 5px;
+.itemContainer {
+    display: flex;
+    margin: 15px 0 7px 0;
+
+    .title {
+        font-size: large;
+        font-weight: 600;
     }
 
-    .descriptionArea {
+    .role {
+        color: rgb(85, 85, 85)
+    }
+
+    .contents {
         flex: 2;
+        margin: 5px 0 10px 0;
+
+        .details {
+            margin-top: 15px;
+        }
+
+        ul {
+            margin-bottom: 15px;
+        }
 
         li {
             margin-left: 20px;
         }
-    }
 
-    .detailArea {
-        margin-bottom: 20px;
-    }
-
-    .skillItem {
-        width: fit-content;
-        margin-right: 5px;
-    }
-
-    .linkArea {
-        color: gray;
-        margin-top: 10px;
-
-        a {
-            color: gray;
-            cursor: pointer;
-            text-decoration: none;
+        .skills {
+            display: flex;
+            margin-top: 5px;
         }
     }
+}
 
+@media screen and (min-width: 768px) {
+    .itemContainer {
+        flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .projectItem {
         border-top: 1px dashed gray;
         flex-direction: column;
-    
+
         .summaryArea {
             text-align: center;
             margin-bottom: 10px;
-            
+
             span {
                 margin-top: 5px;
             }
         }
-    
+
         .descriptionArea {
             flex: 2;
-    
+
             li {
                 margin-left: 20px;
             }
         }
-    
+
         .detailArea {
             margin-bottom: 20px;
         }
-    
+
         .skillItem {
             width: fit-content;
             margin-right: 5px;
         }
-    
+
         .linkArea {
             color: gray;
             margin-top: 10px;
-    
+
             a {
                 color: gray;
                 cursor: pointer;
                 text-decoration: none;
             }
         }
-    
+
+    }
+
+    .itemContainer {
+        flex-direction: column;
     }
 }
