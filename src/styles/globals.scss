@@ -87,8 +87,20 @@ header {
 }
 
 @media screen and (max-width: 1000px) {
-    .contents {
-        width: 100%;
-        flex-direction: column;
+
+    header {
+        font-size: 20px;
+        padding: 20px 30px;
+
+        .contents {
+            width: 100%;
+            flex-direction: column;
+
+            li {
+                font-size: 15px;
+                padding: 8px 7px;
+            }
+        }
     }
+
 }
